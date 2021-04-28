@@ -1,0 +1,94 @@
+
+@import 'mixins';
+
+
+
+///////////////Шрифты//////
+//&subset=cyrillic-ext
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../fonts/Gilroy-Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: normal;
+        src:url('../fonts/Gilroy-Medium.woff') format('woff');
+        }
+
+$fontFamilyBold:"Gilroy-Bold";
+$fontFamilyMedium:"Gilroy-Medium";
+///////////////Переменные///////////
+
+
+$minWidth:320;
+$maxWidth:1445;
+$maxWidthContainer:943;
+$md1: $maxWidthContainer+12;
+$md2: 991;
+$md3: 767;
+$md4: 479;
+
+
+a{
+    text-decoration: none;
+    font-style: normal;
+ 
+    @media (min-width:992px) {
+        &:hover
+        {
+            color:#070707;
+        }
+    }
+ 
+}
+
+li{
+    list-style-type: none;
+}
+
+
+@import 'header';
+@import 'first-block';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'footer';
+@import 'icons';
+body{
+    font-family: $fontFamilyBold;
+    // padding-left: 19%;
+    // padding-right: 19%;
+    padding: 0;
+    margin: 0;
+   
+}   
+p{
+    font-family: $fontFamilyMedium;
+}
+img{
+    width: 100%;
+}
+
+._container
+{
+    max-width:$maxWidthContainer+px;
+    margin: 0 auto;
+    padding: 0 10% 0 10%;
+@media(max-width: $md1+px)
+{
+    max-width: $md1+px
+}
+@media(max-width: $md2+px)
+{
+    max-width: $md2+px
+}
+    @media(max-width: $md3+px)
+    {
+        max-width: $md3+px
+    }
+}

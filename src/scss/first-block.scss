@@ -1,0 +1,82 @@
+
+
+.first-block
+{
+    &__info
+    {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+      
+        height: 150px;
+        margin-bottom: 20px;
+       
+    }
+    &__image{
+        width: 100%;
+        height: auto;
+        background-size:cover;
+        // background-image:url(../img/denis.png) no-repeat;
+    }
+   
+}
+.info{
+    &__name{
+        width: 50px;
+        font-size: 23px;
+        line-height: 59px;
+    }
+    &__job{
+        width: 150px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        font-family:$fontFamilyMedium;
+        margin-top: 10px;
+        // margin-bottom: 10%;
+    }
+    &__language
+    {
+        transform: rotate(-90deg);
+        font-size: 16px;
+        font-family: $fontFamilyMedium;
+    }
+}
+
+@media (max-width:500px)
+{
+    .info{
+        &__language{
+            display: none;
+        }
+        &__name{
+            height: 93%
+        }
+
+    //     &__job{
+    //         position: absolute;
+    // bottom: 71%;
+    //     }
+
+      
+    }
+   
+    .first-block
+{
+    &__info
+    {   
+        justify-content:flex-start;
+        flex-direction: column;
+        width: 40%;
+        align-items: start;
+    }
+    &__image{
+      margin-top: 30%;
+    }
+
+   
+   
+}
+
+}

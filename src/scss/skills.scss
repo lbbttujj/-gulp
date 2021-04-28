@@ -1,0 +1,63 @@
+.skills-block
+{
+    &__content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5% !important;
+        h1{
+            margin-top: 5%;
+        margin-bottom: 3%;
+        }
+        p{
+            margin-bottom: 3%;
+        }
+    }
+
+
+   
+    
+}
+
+.programs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 7%;
+    margin-top: 6%;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        margin-bottom: 13%;
+    }
+    &__text{
+        width: 80px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 30%;
+        color:#828282;
+    }
+    &__stars{
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width:500px) {
+    .programs{
+        flex-direction: column;
+        width: 35%;
+        &__text{
+            margin-bottom: 10%;
+        }
+        &__item{
+            margin-top: 30%;
+        }
+    }
+}
